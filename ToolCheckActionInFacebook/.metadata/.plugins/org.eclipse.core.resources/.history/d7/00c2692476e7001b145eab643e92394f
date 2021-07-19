@@ -1,0 +1,27 @@
+package action.social.medial;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class App 
+{
+	private static WebDriver webDriver;
+	private static String username = "0974076085";
+	private static String password = "trinhvo19972002";
+	private static String urlFacebook = "https://www.facebook.com/";
+		
+    public static void main( String[] args ) throws InterruptedException
+    {
+    	 System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\Desktop\\chromedriver.exe");  
+    	 webDriver=new ChromeDriver();  
+    	 webDriver.get(urlFacebook);  
+         Thread.sleep(2000);
+  
+         webDriver.findElement(By.id("email")).sendKeys(username);
+         webDriver.findElement(By.id("pass")).sendKeys(password);
+    	 //webDriver.close();  
+    }
+    
+    
+}

@@ -1,0 +1,116 @@
+!SESSION 2021-07-19 11:02:25.693 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2021-07-19 11:02:42.789
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2021-07-19 11:02:45.165
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-19 11:02:45.165
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ffdd510,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8c18bde,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-07-19 11:03:04.951
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.yattasolutions.umllab 4 0 2021-07-19 11:03:05.726
+!MESSAGE UML Lab internal error: Integrity of licensing plug-in could not be verified
+!STACK 0
+com.yattasolutions.obf.kl.a: License could not be verified
+	at com.yattasolutions.obf.mt.f.checkIntegrity(SourceFile:208)
+	at com.yattasolutions.obf.mt.f.anP(SourceFile:110)
+	at com.yattasolutions.obf.mt.f.aoc(SourceFile:1)
+	at com.yattasolutions.obf.mt.i.afb(SourceFile:209)
+	at com.yattasolutions.obf.mt.f.dr(SourceFile:406)
+	at com.yattasolutions.obf.mt.d.dr(SourceFile:209)
+	at com.yattasolutions.obf.oe.a.earlyStartup(SourceFile:32)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2719)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.security.cert.CertificateExpiredException: NotAfter: Wed Jun 24 19:00:00 ICT 2020
+	at sun.security.x509.CertificateValidity.valid(Unknown Source)
+	at sun.security.x509.X509CertImpl.checkValidity(Unknown Source)
+	at sun.security.x509.X509CertImpl.checkValidity(Unknown Source)
+	at com.yattasolutions.obf.mt.f.checkIntegrity(SourceFile:202)
+	... 11 more
+
+!ENTRY com.yattasolutions.umllab 4 0 2021-07-19 11:03:06.051
+!MESSAGE UML Lab internal error: Integrity of licensing plug-in could not be verified
+!STACK 0
+com.yattasolutions.obf.kl.a: License could not be verified
+	at com.yattasolutions.obf.mt.f.checkIntegrity(SourceFile:208)
+	at com.yattasolutions.obf.mt.f.anP(SourceFile:110)
+	at com.yattasolutions.obf.mt.f.aoc(SourceFile:1)
+	at com.yattasolutions.obf.mt.i.afb(SourceFile:209)
+	at com.yattasolutions.obf.mt.f.dr(SourceFile:406)
+	at com.yattasolutions.obf.mt.d.dr(SourceFile:209)
+	at com.yattasolutions.obf.mt.f.dq(SourceFile:387)
+	at com.yattasolutions.obf.mt.d.dq(SourceFile:191)
+	at com.yattasolutions.obf.oe.a.a(SourceFile:46)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+Caused by: java.security.cert.CertificateExpiredException: NotAfter: Wed Jun 24 19:00:00 ICT 2020
+	at sun.security.x509.CertificateValidity.valid(Unknown Source)
+	at sun.security.x509.X509CertImpl.checkValidity(Unknown Source)
+	at sun.security.x509.X509CertImpl.checkValidity(Unknown Source)
+	at com.yattasolutions.obf.mt.f.checkIntegrity(SourceFile:202)
+	... 33 more
+
+!ENTRY org.eclipse.ui 2 2 2021-07-19 11:05:44.708
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-07-19 11:05:45.543
+!MESSAGE An internal error occurred during: "Check server availability".
+!STACK 0
+java.lang.NullPointerException
+	at com.yattasolutions.platform.marketplace.client.account.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

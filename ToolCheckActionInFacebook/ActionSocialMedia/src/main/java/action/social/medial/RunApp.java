@@ -24,8 +24,8 @@ public class RunApp {
 		WebDriver webDriverChrome =  openChrome.OpenChrome();
 		
 		LoginAction login = new LoginActionImpl();
-		AccountLoginFacebook accountLoginFacebook = new AccountLoginFacebook("vovantrinhdhbkdn@gmail.com", "trinhvo19972002");
-		AccountLoginFacebook accountdanghieu = new AccountLoginFacebook("zcq89028@zwoho.com", "trinhvo19972002");
+		AccountLoginFacebook accountLoginFacebook = new AccountLoginFacebook("vovantrinhdhbkdn@gmail.com", "trinhvo1997");
+		AccountLoginFacebook accountdanghieu = new AccountLoginFacebook("zcq89028@zwoho.com", "trinhvo1997");
         ArrayList<AccountLoginFacebook> accountLoginFacebooks = new ArrayList<AccountLoginFacebook>();
         accountLoginFacebooks.add(accountdanghieu);
         accountLoginFacebooks.add(accountLoginFacebook);
